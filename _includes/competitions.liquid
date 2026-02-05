@@ -1,0 +1,34 @@
+{% assign competitions_entry = site.data.cv | where: "title", "Competitions" | first %}
+{% if competitions_entry %}
+  <div class="competitions">
+    {% if competitions_entry.description %}
+      <p class="text-muted mb-3" style="font-style: italic;">
+        {{ competitions_entry.description }}
+      </p>
+    {% endif %}
+    <div class="table-responsive">
+      <table class="table table-sm table-borderless">
+        {% assign max_items = 5 %}
+        {% assign total_items = competitions_entry.contents | size %}
+        {% for content in competitions_entry.contents limit: max_items %}
+          <tr>
+            <td class="p-0 pr-2 font-weight-bold text-right" style="width: 10%; white-space: nowrap">
+              {{ content.year }}
+            </td>
+            <td class="p-0 pl-2 pb-2">
+              <strong>{{ content.title }}</strong>{% if content.event %}, {{ content.event }}{% endif %}
+            </td>
+          </tr>
+        {% endfor %}
+        {% if total_items > max_items %}
+          <tr>
+            <td class="p-0 pr-2"></td>
+            <td class="p-0 pl-2">
+              <span class="text-muted" style="font-size: 1.2em;">...</span>
+            </td>
+          </tr>
+        {% endif %}
+      </table>
+    </div>
+  </div>
+{% endif %}

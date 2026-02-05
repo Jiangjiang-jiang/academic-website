@@ -12,3 +12,18 @@ github_repos:
   - FortAwesome/Font-Awesome
   - mathjax/MathJax
   - jpswalsh/academicons
+
+# Simple repositories list for about page
+github_repos_simple:
+  - name: Jiangjiang-jiang/groebner-basis-solver
+    display_name: lava
+    description: A high-performance open-source tool for computing Gröbner Bases of multivariate polynomial systems.
+    language: Rust
+  - name: Jiangjiang-jiang/pwsh-deobfuscation
+    display_name: pwsh-deobfuscation
+    description: An AST-based and semantics-preserving deobfuscation technique for PowerShell scripts.
+    language: Python
+  - name: Jiangjiang-jiang/android-apk-analyzer
+    display_name: android-apk-analyzer
+    description: A feature extractor and APK analyzer built on FlowDroid's AndroidManifest analysis and Dexlib2.
+    language: Java

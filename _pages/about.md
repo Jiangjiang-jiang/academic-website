@@ -25,6 +25,13 @@ experience:
 awards:
   enabled: true # includes honors and awards section from cv.yml (without dates)
 
+competitions:
+  enabled: true # includes selected competitions from cv.yml
+  title: Selected Competitions # optional, defaults to "Competitions"
+
+repositories:
+  enabled: true # includes a simple list of GitHub repositories
+
 announcements:
   enabled: false # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items

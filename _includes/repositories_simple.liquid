@@ -1,0 +1,42 @@
+<!-- Simple GitHub Repositories List -->
+{% comment %} GitHub language colors mapping {% endcomment %}
+{% assign language_colors = "JavaScript:#f1e05a,Python:#3572A5,Java:#b07219,C:#555555,C++:#f34b7d,C#:#178600,Go:#00ADD8,Rust:#dea584,TypeScript:#2b7489,Ruby:#701516,PHP:#4F5D95,Swift:#ffac45,Kotlin:#F18E33,R:#198CE7,Shell:#89e051,HTML:#e34c26,CSS:#563d7c,Scala:#c22d40,Perl:#0298c3,Haskell:#5e5086,Lua:#000080,Dart:#00B4AB,Elixir:#6e4a7e,Clojure:#db5855,Objective-C:#438eff,Vue:#41b883,MATLAB:#e16737,Jupyter Notebook:#DA5B0B,Vim script:#199f4b,Emacs Lisp:#c065db" | split: "," %}
+
+<div class="repositories-simple">
+  {% if site.data.repositories.github_repos_simple %}
+    <div class="repo-list">
+      {% for repo in site.data.repositories.github_repos_simple %}
+        <div class="repo-item">
+          <div class="repo-header">
+            <a href="https://github.com/{{ repo.name }}" target="_blank" class="repo-name">
+              <i class="fa-brands fa-github"></i>
+              {% if repo.display_name %}
+                {{ repo.display_name }}
+              {% else %}
+                {{ repo.name }}
+              {% endif %}
+            </a>
+            {% if repo.language %}
+              {% comment %} Find matching language color {% endcomment %}
+              {% assign lang_color = "#ccc" %}
+              {% for lang_pair in language_colors %}
+                {% assign lang_data = lang_pair | split: ":" %}
+                {% if lang_data[0] == repo.language %}
+                  {% assign lang_color = lang_data[1] %}
+                  {% break %}
+                {% endif %}
+              {% endfor %}
+              <span class="repo-language">
+                <span class="language-dot" style="background-color: {{ lang_color }}"></span>
+                {{ repo.language }}
+              </span>
+            {% endif %}
+          </div>
+          {% if repo.description %}
+            <p class="repo-description">{{ repo.description }}</p>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>

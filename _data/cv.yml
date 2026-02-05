@@ -83,6 +83,32 @@
       items:
         - National Encouragement Scholarship
 
+- title: Competitions
+  type: competition_list
+  description: "Direction: Crypto & Reverse & Pwn | Teams: BXS (2017-2021), SU (2022-2023)"
+  contents:
+    - title: 1st Prize
+      event: 7th HWS Capture the Flag (CTF) Competition - Hardware & Software Security
+      year: Nov. 2023
+    - title: 1st Prize in the Province & 2nd Prize in the Nation
+      event: Topsec Cup National Cryptography and Mathematics Competition
+      year: Aug. 2023
+    - title: Runners up
+      event: Real World CTF 2023 Trial Competition
+      year: Feb. 2023
+    - title: 3rd Prize, rank 4
+      event: Datacon Data Security Analytics Competition - Software Security
+      year: Dec. 2022
+    - title: 2nd Prize, rank 7
+      event: Huawei Cup National Graduate Cybersecurity Innovation and Competition - Attack and Defense in Real Network
+      year: Nov. 2022
+    - title: Special Prize
+      event: Huawei Cup CUMT CTF Cybersecurity Technology Competition
+      year: Oct. 2019
+    - title: 1st prize
+      event: Gu'an Cup CTF Cybersecurity Technology Competition
+      year: Nov. 2018
+
 - title: Academic Interests
   type: nested_list
   contents:

@@ -1,0 +1,14 @@
+{% assign awards_entry = site.data.cv | where: "title", "Honors and Awards" | first %}
+{% if awards_entry %}
+  <div class="awards">
+    <ul class="list-unstyled">
+      {% for content in awards_entry.contents %}
+        {% if content.items %}
+          {% for item in content.items %}
+            <li class="mb-1">{{ item }}, {{ content.year }}</li>
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+{% endif %}

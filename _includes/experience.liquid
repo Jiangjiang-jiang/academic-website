@@ -1,0 +1,27 @@
+{% assign experience_entry = site.data.cv | where: "title", "Experience" | first %}
+{% if experience_entry %}
+  <div class="experience">
+    <div class="table-responsive">
+      <table class="table table-sm table-borderless">
+        {% for content in experience_entry.contents %}
+          <tr>
+            <td class="p-0 pr-2 font-weight-bold text-right" style="width: 20%; white-space: nowrap">
+              {{ content.year }}
+            </td>
+            <td class="p-0 pl-2">
+              <strong>{{ content.title }}</strong>
+              {% if content.institution %}
+                <br>
+                <span class="text-muted">{{ content.institution }}</span>
+              {% endif %}
+              {% if content.department %}
+                <br>
+                <span class="text-muted" style="font-size: 0.9em">{{ content.department }}</span>
+              {% endif %}
+            </td>
+          </tr>
+        {% endfor %}
+      </table>
+    </div>
+  </div>
+{% endif %}

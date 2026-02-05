@@ -40,6 +40,14 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
+    <!-- Education -->
+    {% if page.education and page.education.enabled %}
+      <h2>
+        <a href="{{ '/cv/' | relative_url }}" style="color: inherit">Education</a>
+      </h2>
+      {% include education.liquid %}
+    {% endif %}
+
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h2>
@@ -59,9 +67,25 @@ layout: default
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Papers</a>
       </h2>
       {% include selected_papers.liquid %}
+    {% endif %}
+
+    <!-- Experience -->
+    {% if page.experience and page.experience.enabled %}
+      <h2>
+        <a href="{{ '/cv/' | relative_url }}" style="color: inherit">Experience</a>
+      </h2>
+      {% include experience.liquid %}
+    {% endif %}
+
+    <!-- Awards -->
+    {% if page.awards and page.awards.enabled %}
+      <h2>
+        <a href="{{ '/cv/' | relative_url }}" style="color: inherit">Awards</a>
+      </h2>
+      {% include awards.liquid %}
     {% endif %}
 
     <!-- Social -->

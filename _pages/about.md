@@ -2,14 +2,16 @@
 layout: about
 title: about
 permalink: /
-subtitle: # <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: qsangxin@gmail.com # <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
 profile:
   align: left
   image: profile.jpg
   image_circular: true # crops the image to make it circular
   more_info:  >
-    <p>bowen.jiang.2024@phdcs.smu.edu.sg</p>
+    <p>  </p>
+    <p> </p>
+    <p> </p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -34,6 +36,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a Ph.D. candidate in the School of Computing and Information Systems at Singapore Management University (SMU), advised by Prof. [Haiyang Xue](https://haiyangxc.github.io/hyxue/). Previously, I received my Master’s degree from the School of Cyber Science and Technology at Shandong University (SDU), and my B.Eng. in Information Security from China University of Mining and Technology (CUMT).
+I am a Ph.D. candidate in the School of Computing and Information Systems at Singapore Management University [(SMU)](https://www.smu.edu.sg/), advised by Prof. [Haiyang Xue](https://haiyangxc.github.io/hyxue/). Previously, I received my Master’s degree from the School of Cyber Science and Technology at Shandong University [(SDU)](https://www.sdu.edu.cn/), and my B.Eng. in Information Security from China University of Mining and Technology [(CUMT)](http://www.cumt.edu.cn/).
 
 My research interests focus on threshold cryptography, secure multiparty computation, applied cryptography.

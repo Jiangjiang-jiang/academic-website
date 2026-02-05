@@ -11,8 +11,8 @@
 - title: Education
   type: time_table
   contents:
-    - title: Ph.D. in School of Computing and Information Systems
-      institution: Singapore Management University, Singapore
+    - title: Ph.D. of Computer Science
+      institution: School of Computing and Information Systems, Singapore Management University, Singapore
       year: Jan. 2025 ~ Present
       description:
         - Description 1.
@@ -21,15 +21,15 @@
           contents:
             - Sub-description 1.
             - Sub-description 2.
-    - title: M.S. in School of Cyber Science and Technology
-      institution: Shandong University, Qingdao, China
+    - title: M.S. of Cyber Science and Technology
+      institution: School of Cyber Science and Technology, Shandong University, Qingdao, China
       year: Sep. 2021 ~ Jun. 2024
       description:
         - Description 1.
         - Description 2.
 
-    - title: B.Eng. in School of Computer Science and Technology
-      institution: China University of Mining and Technology, Xuzhou, China
+    - title: B.Eng. of Information Security
+      institution: School of Computer Science and Technology, China University of Mining and Technology, Xuzhou, China
       year: Sep. 2017 ~ Jun. 2021
       description:
         - Description 1.

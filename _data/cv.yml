@@ -38,6 +38,10 @@
 - title: Experience
   type: time_table
   contents:
+    - title: Teaching Assistant for Foundation of Cybersecurity (CS440)
+      institution: Singapore Management University
+      year: Term 2. 2025/26 
+
     - title: Research Assistant
       institution: Department of Computing, The Hong Kong Polytechnic University.
       year: Mar. 2024 ~ Dec. 2024
@@ -48,16 +52,17 @@
           contents:
             - Sub-description 1.
             - Sub-description 2.
+
+    - title: Teaching Assistant for Introduction to Cryptography
+      institution: Shandong University
+      year: Fall. 2022
+    
     - title: Software Development Engineer
       institution: Department of ICT Products and Solutions, Huawei Technologies Co., Ltd.
       year: Aug. 2020 ~ Oct. 2020
       description:
         - Description 1.
         - Description 2.
-
-    - title: Teaching Assistant for Introduction to Cryptography
-      institution: Shandong University.
-      year: Fall. 2022
 
 - title: Open Source Projects
   type: time_table

@@ -12,5 +12,13 @@ email: bowen.jiang.2024@phdcs.smu.edu.sg # your email address
 #   logo: https://www.alberteinstein.com/wp-content/uploads/2024/03/cropped-favicon-192x192.png # can be png, svg, jpg
 #  title: Custom Social
 #  url: https://www.alberteinstein.com/
-github_username: Jiangjiang-jiang
-blogger_url: https://qsang.xin
+
+github:
+  logo: fa-brands fa-github
+  title: GitHub
+  url: https://github.com/Jiangjiang-jiang
+
+blog:
+  logo: fa-brands fa-blogger
+  title: Blog
+  url: https://qsang.xin
